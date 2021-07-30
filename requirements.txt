@@ -69,7 +69,6 @@ pytz==2021.1
 pyzmq==22.1.0
 requests==2.26.0
 Send2Trash==1.7.1
-sitemap-generator==0.9.8
 six==1.16.0
 smmap==4.0.0
 soupsieve==2.2.1
