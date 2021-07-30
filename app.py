@@ -32,12 +32,20 @@ def writeCol1():
             for article in listArticle:
                 if exclude not in article[1]:
                     displayList.append(article)
-        for article in displayList:
-            col1.write(f'''
-                * URL: {article[1]}
-                * Date: {article[2]}
-                * Titre: {article[3]}
-                ''')
+        if len(displayList) == 0:
+            for article in listArticle:
+                col1.write(f'''
+                    * URL: {article[1]}
+                    * Date: {article[2]}
+                    * Titre: {article[3]}
+                    ''')
+        else:
+            for article in displayList:
+                col1.write(f'''
+                    * URL: {article[1]}
+                    * Date: {article[2]}
+                    * Titre: {article[3]}
+                    ''')
 
 
 def writeCol2(kw,url):
@@ -55,10 +63,16 @@ def writeCol2(kw,url):
             for article in listArticle2:
                 if exclude not in article[1]:
                     displayList2.append(article)
-        for article in displayList2:
-            col2.write(f'''
-            * {article[1]}
-            ''')
+        if len(displayList2) == 0:
+            for article in listArticle2:
+                col2.write(f'''
+                * {article[1]}
+                ''')
+        else:
+            for article in displayList2:
+                col2.write(f'''
+                * {article[1]}
+                ''')
 
 
 articles = []
