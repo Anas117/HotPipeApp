@@ -142,14 +142,14 @@ def writeCol1():
                     col1.write(f'''
                     * URL: {article[1]}
                     * Date: {article[2]}
-                    * Titre: {article[3]}
+                    * Category: {article[3]}
                     ''')
         else:
             for article in displayList:
                 col1.write(f'''
                     * URL: {article[1]}
                     * Date: {article[2]}
-                    * Titre: {article[3]}
+                    * Category: {article[3]}
                     ''')
 
 
